@@ -25,6 +25,26 @@ const customStyles = {
   },
 };
 
+const customStyles1 = {
+  content: {
+    top: '50%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    left: '50%',
+    width: '100%',
+    maxWidth: '480px',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    height: '380px',
+    overflow: 'hidden',
+    borderRadius: '30px',
+
+  },
+};
 function App() {
   const dates1 = ["MON 1",
     "TUE 2",
@@ -71,6 +91,8 @@ function App() {
   ]
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [modalIsOpen1, setIsOpen1] = React.useState(false);
+  const [modalIsOpen2, setIsOpen2] = React.useState(false);
+
   const [issues1, setIssues1] = useState(initialIssues1);
   const [currentDate, setCurrentdate] = useState("01/01/2023- 31/02/2023")
   const [showDialog, setShowDialog] = useState(false);
@@ -155,7 +177,7 @@ function App() {
         <div class='subContainer'>
           <div class='btnContainer'>
             <button class='lessthan-btn'><FaLessThan /></button>
-            <button class='dateBtn' onClick={openModal}>{currentDate}</button>
+            <button class='dateBtn' onClick={() => setIsOpen2(true)}>{currentDate}</button>
             <button class='greaterthanBtn' ><FaGreaterThan /></button>
           </div>
           <div class='textSelect-group'>
@@ -189,6 +211,43 @@ function App() {
             <div class='btnGroup'>
               <button class='modalCloseBtn' onClick={closeModal} >Cancel</button>
               <input type="submit" value="Log time" class='submitBtn' />
+            </div>
+          </form>
+        </Modal>
+
+
+
+        <Modal
+          isOpen={modalIsOpen2}
+          onRequestClose={closeModal}
+          style={customStyles1}
+          contentLabel="Example Modal"
+        >
+          <form class='modalForm' onSubmit={() => { alert("Logged successfully") }} >
+            <div class='modalContainer1'>
+              <div class='inputGroup'>
+                <div class='labelInput'>
+                  <label>Start date</label>
+                  <input type="date" class='dateIinput1' required />
+                </div>
+                <div class='labelInput'>
+                  <label>End date</label>
+                  <input type="date" class='numberInput1' placeholder="5" required />
+                </div>
+              </div>
+              <div class='daysGroup'>
+                <a>Current Week</a>
+                <a>Last Week</a>
+                <a>Current month</a>
+                <a>Last month</a>
+                <a>Current quarter</a>
+                <a>Last quarter</a>
+                <input type="number" class='dayInput' /> days
+              </div>
+            </div>
+            <div class='btnGroup'>
+              <button class='modalCloseBtn' onClick={() => setIsOpen2(false)} >Cancel</button>
+              <input type="submit" value="Apply" class='submitBtn' />
             </div>
           </form>
         </Modal>

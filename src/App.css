@@ -4,8 +4,6 @@
 
 }
 
-
-
 .container {
   display: flex;
   flex-direction: row;
@@ -125,6 +123,7 @@ tr:hover {
   align-items: center;
 }
 
+
 .modalInput {
   padding: 12px;
   border-radius: 4px;
@@ -132,12 +131,19 @@ tr:hover {
   border: 1px solid rgb(226, 226, 225)
 }
 
+.labelInput {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .inputGroup {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  gap: 8px
+  gap: 18px
 }
 
 .dateIinput {
@@ -281,4 +287,40 @@ h3 {
   border: 1px solid rgb(226, 226, 225);
   background-color: rgb(255, 255, 255);
   color: #000000
+}
+
+.modalContainer1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.daysGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dayInput {
+  width: 50%;
+  padding: 8px
+}
+
+.dateIinput1 {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid rgb(226, 226, 225)
+}
+
+.numberInput1 {
+  width: 100%;
+  padding: 5px;
+  margin: 0;
+  border-radius: 4px;
+  border: 1px solid rgb(226, 226, 225)
 }
