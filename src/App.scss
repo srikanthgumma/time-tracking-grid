@@ -1,0 +1,237 @@
+.App {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+  
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+  
+      .flex-Row {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+  
+        .selectItem {
+          padding: 6px;
+          border: 1px solid rgb(226, 226, 225);
+          border-radius: 6px;
+          font-size: 18px;
+        }
+  
+        .btn-log-time {
+          padding: 6px;
+          background-color: #0026ff;
+          color: #ffffff;
+          border: 1px solid rgb(226, 226, 225);
+          border-radius: 6px;
+          font-size: 18px;
+          font-weight: bold;
+        }
+  
+        .btn-three-dots {
+          background-color: rgb(241, 241, 238);
+          color: #ffffff;
+          width: fit-content;
+          border: 1px solid rgb(226, 226, 225);
+          border-radius: 6px;
+          font-size: 18px;
+        }
+      }
+    }
+  
+    .subContainer {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      margin-bottom: 26px;
+      justify-content: flex-start;
+      align-items: center;
+  
+      .btnContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(226, 226, 225);
+  
+        .lessthan-btn,
+        .greaterthanBtn {
+          padding: 8px;
+          border: none;
+          border-right: 1px solid rgb(186, 181, 181);
+          background-color: transparent;
+        }
+  
+        .dateBtn {
+          padding: 8px;
+          border: none;
+          background-color: transparent;
+        }
+      }
+  
+      .textSelect-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+  
+        .selectItem2 {
+          padding: 8px;
+          width: 130px;
+          border: 1px solid rgb(226, 226, 225);
+          border-radius: 4px;
+        }
+      }
+    }
+  
+    table {
+      border-collapse: collapse;
+      width: 100%;
+  
+      th,
+      td {
+        border: 1px solid rgb(225, 223, 223);
+        padding: 15px;
+  
+        &:hover {
+          background-color: #6076f6;
+        }
+      }
+  
+      tr:hover {
+        background-color: rgb(237, 237, 253);
+      }
+  
+      .table-header {
+        text-align: left;
+        max-width: 500px;
+        min-width: 100px;
+      }
+  
+      .dateHeader {
+        color: #b3b4b4;
+        font-size: 14px;
+      }
+  
+      .tableRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        font-weight: bold;
+        border: none;
+      }
+    }
+  
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      max-width: 480px;
+      overflow: hidden;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      border-radius: 80px;
+  
+      .modalContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+  
+        .modalForm {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+  
+          .modalInput {
+            padding: 12px;
+            width: 95%;
+            border-radius: 4px;
+            border: 1px solid rgb(226, 226, 225);
+          }
+  
+          .inputGroup {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 8px;
+            width: 100%;
+  
+            .dateIinput {
+              width: 60%;
+              padding: 5px;
+              border: 1px solid rgb(226, 226, 225);
+            }
+  
+            .numberInput {
+              width: 30%;
+              padding: 5px;
+              border-radius: 4px;
+              border: 1px solid rgb(226, 226, 225);
+            }
+          }
+  
+          .textInput {
+            padding: 12px;
+            width: 95%;
+            border-radius: 4px;
+            border: 1px solid rgb(226, 226, 225);
+          }
+  
+          .btnGroup,
+          .modalbtnGroup {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            margin-top: 18px;
+  
+            .modalCloseBtn,
+            .modalCloseBtn1 {
+              padding: 8px;
+              border-radius: 7px;
+              border: 1px solid rgb(226, 226, 225);
+              background-color: #ffffff;
+              color: #000000;
+            }
+  
+            .submitBtn,
+            .modalsubmitBtn {
+              padding: 8px;
+              border-radius: 8px;
+              font-size: 20px;
+              border: 1px solid rgb(226, 226, 225);
+              background-color: #1839f6;
+              color: #ffffff;
+            }
+          }
+        }
+  
+        .label {
+          font-size: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+  
+        h3 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  

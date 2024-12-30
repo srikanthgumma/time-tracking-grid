@@ -1,0 +1,284 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10;
+  margin-bottom: 10;
+}
+
+table,
+td,
+th {
+  border: 1px solid rgb(225, 223, 223);
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr:hover {
+  background-color: rgb(237, 237, 253);
+}
+
+.flex-Row {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center
+}
+
+.selectItem {
+  padding: 6px;
+  border: 1px solid rgb(226, 226, 225);
+  border-radius: 6px;
+  font-size: 18
+}
+
+.btn-log-time {
+  padding: 6px;
+  background-color: #0026ff;
+  color: #ffffff;
+  border: 1px solid rgb(226, 226, 225);
+  border-radius: 6px;
+  font-size: 18;
+  font-weight: bold
+}
+
+.btn-three-dots {
+  background-color: rgb(241, 241, 238);
+  color: #ffffff;
+  width: fit-content;
+  border: 1px solid rgb(226, 226, 225);
+  border-radius: 6px;
+  font-size: 18
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 26px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(226, 226, 225)
+}
+
+.lessthan-btn,
+.greaterthanBtn {
+  padding: 8px;
+  border: none;
+  border-right: 1px solid rgb(186, 181, 181);
+  background-color: transparent
+}
+
+.dateBtn {
+  padding: 8px;
+  border: none;
+  background-color: transparent
+}
+
+.textSelect-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  text-wrap: 'nowrap'
+}
+
+.selectItem2 {
+  padding: 8px;
+  width: 130px;
+  border: 1px solid rgb(226, 226, 225);
+  border-radius: 4px
+}
+
+.modalForm {
+  padding: 20px;
+  border-radius: 30px;
+  width: 100%
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalInput {
+  padding: 12px;
+  border-radius: 4px;
+  width: 95%;
+  border: 1px solid rgb(226, 226, 225)
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px
+}
+
+.dateIinput {
+  width: 60%;
+  padding: 5px;
+  border: 1px solid rgb(226, 226, 225)
+}
+
+.numberInput {
+  width: 30%;
+  padding: 5px;
+  margin: 0;
+  border-radius: 4px;
+  border: 1px solid rgb(226, 226, 225)
+}
+
+.modalnumberInput {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid rgb(226, 226, 225)
+}
+
+.textInput {
+  padding: 12px;
+  border-radius: 4px;
+  width: 95%;
+  border: 1px solid rgb(226, 226, 225)
+}
+
+.btnGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 6px;
+  margin-top: 18px
+}
+
+.modalCloseBtn {
+  border-radius: 7px;
+  padding: 8px;
+  border: 1px solid rgb(226, 226, 225);
+  background-color: rgb(255, 255, 255);
+  color: #000000
+}
+
+.submitBtn {
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid rgb(226, 226, 225);
+  background-color: #0026ff;
+  color: #ffffff
+}
+
+.table-header {
+  width: 100%;
+  max-Width: 500px;
+  min-Width: 100px;
+  text-align: left
+}
+
+.dateHeader {
+  color: #b3b4b4;
+  font-size: 14px
+}
+
+td:hover {
+  background-color: #6076f6;
+}
+
+.tableRow {
+  text-align: left;
+  border: none;
+  display: flex;
+  font-weight: bold;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal {
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  width: 100%;
+  max-Width: 480px;
+  overflow: hidden;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border-radius: 80px;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  padding: 0;
+}
+
+.modalbtnGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.label {
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.modalsubmitBtn {
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 20px;
+  border: 1px solid rgb(226, 226, 225);
+  background-color: #0026ff;
+  color: #ffffff
+}
+
+.modalCloseBtn1 {
+  border-radius: 7px;
+  padding: 8px;
+  font-size: 20px;
+  border: 1px solid rgb(226, 226, 225);
+  background-color: rgb(255, 255, 255);
+  color: #000000
+}
